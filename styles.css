@@ -1,0 +1,935 @@
+
+
+@font-face {
+    font-family: 'clementepdah';
+    src: url('https://cssdisplay.info/wp-content/themes/css%20display/fonts/clementepdah-bookitalic-webfont.woff2') format('woff2'),
+         url('https://cssdisplay.info/wp-content/themes/css%20display/fonts/clementepdah-bookitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'gogh';
+  src: url('https://cssdisplay.info/wp-content/themes/css%20display/fonts/gogh-extrabold-webfont.woff2') format('woff2'),
+       url('https://cssdisplay.info/wp-content/themes/css%20display/fonts/gogh-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futurahandwritten';
+  src: url('https://cssdisplay.info/wp-content/themes/css%20display/futurahandwritten-webfont.woff2') format('woff2'),
+       url('https://cssdisplay.info/wp-content/themes/css%20display/futurahandwritten-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar, ::-moz-scrollbar, ::-ms-scrollbar, ::-o-scrollbar{
+  width: 18px;
+  background-color: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb, ::-moz-scrollbar-thumb, ::-ms-scrollbar-thumb, ::-o-scrollbar-thumb {
+  width: 16px;
+  background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+::-webkit-scrollbar-thumb:hover, ::-moz-scrollbar-thumb:hover, ::-ms-scrollbar-thumb:hover, ::-o-scrollbar-thumb:hover {
+  border-radius: 50px;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #1d1d1d;
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+}
+body #wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+  padding: 0 14px;
+}
+nav #header__logo {
+  height: 36px;
+  width: 142px;
+  transition: all 0.25s ease;
+}
+nav #header__logo:hover {
+  margin-bottom: 5px;
+  opacity: 60%;
+}
+nav #header__button:hover {
+  margin-bottom: 1px;
+}
+
+.button {
+  font-family: "clementepdah", sans-serif;
+  color: white;
+  background: none;
+  border-color: white;
+  cursor: pointer;
+}
+
+.button--primary {
+  font-size: 20px;
+  padding: 9px 20px;
+  border-width: 0 0 1px 0;
+  transition: all 0.5s ease;
+}
+.button--primary:hover {
+  padding-top: 8px;
+  padding-bottom: 12px;
+  margin-bottom: -3px;
+  margin-top: -3px;
+  opacity: 75%;
+  background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button--primary #header__button--icon {
+  margin-left: 20px;
+}
+
+.button--secondary {
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 11px 30px;
+  font-size: 20px;
+  background: none;
+  color: white;
+  border-color: white;
+  transition: all 0.3s ease;
+}
+.button--secondary:hover {
+  padding: 13px 32px;
+  background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -3px;
+}
+
+h1 {
+  font-family: "gogh", sans-serif;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 115%;
+}
+
+h2 {
+  font-family: "gogh", sans-serif;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 115%;
+}
+
+h3 {
+  font-family: "gogh", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h4 {
+  font-family: "gogh", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 115%;
+}
+
+h5 {
+  font-family: "gogh", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 115%;
+}
+
+.body {
+  font-family: "Catamaran", sans-serif;
+  font-size: 20px;
+}
+
+.text--link--gradient {
+  background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.grey-100 {
+  color: #F8F8F8;
+}
+
+.grey-200 {
+  color: #E1E3E2;
+}
+
+.grey-300 {
+  color: #C9CCCA;
+}
+
+.grey-700 {
+  background-color: #292929;
+}
+
+.gradient-main {
+  background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+}
+
+.gradient-1 {
+  background: linear-gradient(109.47deg, #0A76B4 21.8%, #21D4DF 77.98%);
+}
+
+.gradient-2 {
+  background: linear-gradient(102.35deg, #5BD33D -2.55%, #19AE8B 84.24%);
+}
+
+.gradient-3 {
+  background: linear-gradient(284.37deg, #EEBE13 -60.75%, #13EE36 160.05%);
+}
+
+.gradient-4 {
+  background: linear-gradient(219.41deg, #FF6B00 14.77%, #FFC700 77.45%);
+}
+
+.gradient-5 {
+  background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+}
+
+.gradient-6 {
+  background: linear-gradient(215.06deg, #BF103A 20.62%, #FF687A 92.28%);
+}
+
+.gradient-grey {
+  background: linear-gradient(111.27deg, #8D8D8D 13.85%, #4A4A4A 101.24%);
+}
+
+#arrow--1 {
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+#div__arrow--2 {
+  margin-top: -30px;
+  display: flex;
+  justify-content: flex-end;
+}
+#div__arrow--2 #arrow--2 {
+  margin-right: 230px;
+}
+
+.arrow--3 {
+  margin-top: 20px;
+}
+
+hero {
+  display: flex;
+}
+hero #hero__left {
+  width: 822px;
+  margin-top: 80px;
+}
+hero #hero__left #hero__left__heading::before {
+  content: "CSS Display - FlexBox";
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 109.02%;
+  display: block;
+  border-left: #ff4800 2px solid;
+  padding-left: 10px;
+  color: #C9CCCA;
+}
+hero #hero__left #hero__left__heading::after {
+  content: "Spending hours upon hours trying to figure out why your nav isn’t aligning horizontally? Or just keep forgetting how to justify your CSS elements? I’ve made a little guide for all those coders who’ve had enough.";
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  display: block;
+  border-left: #ff4800 2px solid;
+  padding-left: 16px;
+  color: #C9CCCA;
+  width: 631px;
+  margin-top: 36px;
+  margin-bottom: 60px;
+}
+hero #hero__left #hero__left__button--right {
+  margin-left: 54px;
+}
+hero #hero__left #hero__left__button--right__icon {
+  font-family: "FuturaHandwritten";
+  margin-left: 10px;
+}
+hero #hero__right {
+  width: 676px;
+  top: 100px;
+  margin-left: -20px;
+}
+hero #hero__right #hero__right__image {
+  width: 550px;
+  height: auto;
+  margin-left: 0px;
+  margin-top: 30px;
+  flex-shrink: 1;
+  position: absolute;
+}
+hero #hero__right #hero__right__circle {
+  width: 676px;
+  height: 650px;
+  background: rgb(255, 60, 0);
+  opacity: 0.7;
+  filter: blur(400px);
+  z-index: -1;
+  position: absolute;
+}
+
+#section__whatiscss {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: -24px;
+}
+#section__whatiscss #section__whatiscss__left {
+  width: 600px;
+  height: 414px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section__whatiscss #section__whatiscss__left #section__whatiscss__left__square {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 12px;
+}
+#section__whatiscss #section__whatiscss__right {
+  text-align: right;
+  flex-grow: 0;
+  margin-top: 70px;
+}
+#section__whatiscss #section__whatiscss__right #section__whatiscss__right__h3::after {
+  content: "CSS Flexbox is a system of structuring containers, and items within those containers, when being displayed on a website. Flexbox is used whenever coders are creating custom layouts, most commonly in navigation bars and headers, as they’re almost always displayed horizontally.";
+  font-family: "Catamaran";
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  width: 580px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+#section__explanation__h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#section__explanation__body__div {
+  display: flex;
+  justify-content: center;
+}
+
+.section__explanation__body {
+  width: 569px;
+  height: 87px;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section__guide__header {
+  display: flex;
+  margin-top: 240px;
+  align-items: flex-start;
+}
+.section__guide__header .section__guide__square-icon {
+  margin: 10px 10px 0px 40px;
+}
+
+.guide {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 100px;
+}
+
+.guide__div--left {
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+  margin-top: 24px;
+}
+
+.guide__h4 {
+  display: flex;
+}
+
+.guide__description {
+  width: 520px;
+  height: 228px;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  display: block;
+  color: #E1E3E2;
+  margin-top: 40px;
+}
+
+.guide__description::after {
+  content: "The ‘row’ value in CSS, for example, is used often in navigation in a header. The ‘column’ value may be used for vertical lists, such as a side menu.";
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  display: block;
+  color: #E1E3E2;
+  margin-top: 28px;
+}
+
+.item__h4::before {
+  content: "";
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 109.02%;
+  color: #C9CCCA;
+}
+
+.item__h4__before--box::before {
+  content: "#box {";
+}
+
+.item__h4__before--box2and4::before {
+  content: "#box2and4 {";
+}
+
+.item__h4__before--box2::before {
+  content: "#box2 {";
+}
+
+.guide__div {
+  width: 550px;
+  height: 350px;
+  border-radius: 18px;
+  display: flex;
+  padding: 12px;
+}
+
+.box {
+  width: 157px;
+  height: 95px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.guide__text-box__rotating-text__div {
+  height: 40px;
+  overflow: hidden;
+}
+
+.rotating-text {
+  background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  background: -moz-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  background: -ms-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  background: -o-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  margin-left: 20px;
+  display: block;
+  position: relative;
+  animation: rotating-text 10s ease-in-out infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes rotating-text {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-51.75px);
+  }
+  50%, 70% {
+    transform: translateY(-103.5px);
+  }
+  75%, 95% {
+    transform: translateY(-155.25px);
+  }
+  100% {
+    transform: translateY(-207px);
+  }
+}
+
+@keyframes rotating-text {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-51.75px);
+  }
+  50%, 70% {
+    transform: translateY(-103.5px);
+  }
+  75%, 95% {
+    transform: translateY(-155.25px);
+  }
+  100% {
+    transform: translateY(-207px);
+  }
+}
+#guide__div--flex-direction {
+  animation: animation_flex-direction 10s infinite;
+}
+
+@keyframes animation_flex-direction {
+  0%, 20% {
+    flex-direction: column;
+  }
+  25%, 45% {
+    flex-direction: column-reverse;
+  }
+  50%, 70% {
+    flex-direction: row;
+  }
+  75%, 95% {
+    flex-direction: row-reverse;
+  }
+  100% {
+    flex-direction: column;
+  }
+}
+
+@keyframes animation_flex-direction {
+  0%, 20% {
+    flex-direction: column;
+  }
+  25%, 45% {
+    flex-direction: column-reverse;
+  }
+  50%, 70% {
+    flex-direction: row;
+  }
+  75%, 95% {
+    flex-direction: row-reverse;
+  }
+  100% {
+    flex-direction: column;
+  }
+}
+#guide__div--justify-content {
+  animation: animation_justify-content 10s infinite;
+  align-items: center;
+}
+
+@keyframes animation_justify-content {
+  0%, 20% {
+    justify-content: flex-start;
+  }
+  25%, 45% {
+    justify-content: center;
+  }
+  50%, 70% {
+    justify-content: space-evenly;
+  }
+  75%, 95% {
+    justify-content: space-between;
+  }
+  100% {
+    justify-content: flex-start;
+  }
+}
+
+@keyframes animation_justify-content {
+  0%, 20% {
+    justify-content: flex-start;
+  }
+  25%, 45% {
+    justify-content: center;
+  }
+  50%, 70% {
+    justify-content: space-evenly;
+  }
+  75%, 95% {
+    justify-content: space-between;
+  }
+  100% {
+    justify-content: flex-start;
+  }
+}
+#guide__div--align-items {
+  animation: animation_align-items 10s infinite;
+  justify-content: center;
+}
+
+@keyframes animation_align-items {
+  0%, 20% {
+    align-items: flex-start;
+  }
+  25%, 45% {
+    align-items: center;
+  }
+  50%, 70% {
+    align-items: flex-end;
+  }
+  75%, 95% {
+    align-items: stretch;
+  }
+  100% {
+    align-items: flex-start;
+  }
+}
+
+@keyframes animation_align-items {
+  0%, 20% {
+    align-items: flex-start;
+  }
+  25%, 45% {
+    align-items: center;
+  }
+  50%, 70% {
+    align-items: flex-end;
+  }
+  75%, 95% {
+    align-items: stretch;
+  }
+  100% {
+    align-items: flex-start;
+  }
+}
+#guide__div--flex-wrap {
+  animation: animation_flex-wrap 10s infinite;
+}
+
+@keyframes animation_flex-wrap {
+  0%, 20% {
+    flex-wrap: nowrap;
+  }
+  25%, 45% {
+    flex-wrap: wrap;
+  }
+  50%, 70% {
+    flex-wrap: wrap-reverse;
+  }
+  75%, 95% {
+    flex-wrap: nowrap;
+  }
+  100% {
+    flex-wrap: nowrap;
+  }
+}
+
+@keyframes animation_flex-wrap {
+  0%, 20% {
+    flex-wrap: nowrap;
+  }
+  25%, 45% {
+    flex-wrap: wrap;
+  }
+  50%, 70% {
+    flex-wrap: wrap-reverse;
+  }
+  75%, 95% {
+    flex-wrap: nowrap;
+  }
+  100% {
+    flex-wrap: nowrap;
+  }
+}
+#guide__div--align-content {
+  animation: animation_align-content 10s infinite;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@keyframes animation_align-content {
+  0%, 20% {
+    align-content: center;
+  }
+  25%, 45% {
+    align-content: space-around;
+  }
+  50%, 70% {
+    align-content: space-between;
+  }
+  75%, 95% {
+    align-content: flex-end;
+  }
+  100% {
+    align-content: center;
+  }
+}
+
+@keyframes animation_align-content {
+  0%, 20% {
+    align-content: center;
+  }
+  25%, 45% {
+    align-content: space-around;
+  }
+  50%, 70% {
+    align-content: space-between;
+  }
+  75%, 95% {
+    align-content: flex-end;
+  }
+  100% {
+    align-content: center;
+  }
+}
+#guide__div--order .gradient-2 {
+  animation: animation_order 10s infinite;
+  flex-wrap: wrap;
+}
+
+@keyframes animation_order {
+  0%, 20% {
+    order: 0;
+  }
+  25%, 45% {
+    order: 5;
+  }
+  50%, 70% {
+    order: -20;
+  }
+  75%, 95% {
+    order: 500;
+  }
+  100% {
+    order: 1;
+  }
+}
+
+@keyframes animation_order {
+  0%, 20% {
+    order: 0;
+  }
+  25%, 45% {
+    order: 5;
+  }
+  50%, 70% {
+    order: -20;
+  }
+  75%, 95% {
+    order: 500;
+  }
+  100% {
+    order: 1;
+  }
+}
+#guide__div--flex-grow .grow {
+  animation: animation_flex-grow 10s infinite;
+}
+
+#guide__div--flex-grow .nogrow {
+  flex-grow: 1;
+}
+
+#guide__div--flex-grow {
+  align-items: center;
+}
+
+
+@keyframes animation_flex-grow {
+  0%, 20% {
+    flex-grow: 1;
+  }
+  25%, 45% {
+    flex-grow: 0.5;
+  }
+  50%, 70% {
+    flex-grow: 2;
+  }
+  75%, 95% {
+    flex-grow: 10;
+  }
+  100% {
+    flex-grow: 1;
+  }
+}
+#guide__div--flex-shrink .shrink {
+
+          animation: animation_flex-shrink 10s infinite;
+}
+
+#guide__div--flex-shrink {
+  align-items: center;
+}
+
+
+@keyframes animation_flex-shrink {
+  0%, 20% {
+    flex-shrink: 1;
+  }
+  25%, 45% {
+    flex-shrink: 0.5;
+  }
+  50%, 70% {
+    flex-shrink: 2;
+  }
+  75%, 95% {
+    flex-shrink: 10;
+  }
+  100% {
+    flex-shrink: 1;
+  }
+}
+#guide__div--align-self .align-self {
+
+          animation: animation_align-self 10s infinite;
+}
+
+#guide__div--align-self {
+  align-items: center;
+}
+
+
+
+@keyframes animation_align-self {
+  0%, 20% {
+    align-self: flex-start;
+  }
+  25%, 45% {
+    align-self: center;
+  }
+  50%, 70% {
+    align-self: flex-end;
+  }
+  75%, 95% {
+    align-self: center;
+  }
+  100% {
+    align-self: flex-start;
+  }
+}
+.flex-basis {
+
+          animation: animation_flex-basis 10s infinite;
+}
+
+#guide__div--flex-basis {
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 550px;
+}
+
+
+
+@keyframes animation_flex-basis {
+  0%, 20% {
+    flex-basis: 100px;
+  }
+  25%, 45% {
+    flex-basis: auto;
+  }
+  50%, 70% {
+    flex-basis: 300px;
+  }
+  75%, 95% {
+    flex-basis: content;
+  }
+  100% {
+    flex-basis: 100px;
+  }
+}
+#section__closing-message {
+  text-align: center;
+  align-items: center;
+  margin-top: 140px;
+}
+#section__closing-message #section__closing-message__body {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  width: 800px;
+}
+
+#section__closing-message__div {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+footer {
+  font-family: "Catamaran", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 10px 16px;
+  font-weight: bold;
+  margin-top: 110px;
+}
+
+#otherdevice {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #primary {
+    width: 100%;
+  }
+  #secondary {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+  #wrapper {
+    display: none;
+  }
+  #otherdevice {
+    display: block;
+    text-align: center;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  footer {
+    justify-self: flex-end;
+  }
+}/*# sourceMappingURL=style.css.map */

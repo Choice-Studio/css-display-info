@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./images/Favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./fonts/FuturaHandwritten.ttf">
+  <link rel="stylesheet" href="./fonts/clementepdah-bookitalic-webfont.woff2">
+  <link rel="stylesheet" href="./fonts/gogh-extrabold-webfont.woff2">
+
+  <meta property="og:title" content="Learn CSS Display & Flexbox Properties" />
+  <meta property="og:description" content="A comprehensive guide to the many CSS properties and values associated with display flexbox." />
+  <meta property="og:image" content="./images/CSS Display thumbnail" />
+
+  <title>CSS Display - FlexBox</title>
+</head>
+
+<body>
+  <nav>
+    <a href="/home"><img src="./images/Logo.svg" alt="CSS Display Logo" id="header__logo"></a>
+    <a href="https://buymeacoffee.com/choice" target="_blank">
+      <button class="button button--primary" id="header__button">buy me a coffee<img src="./images/Coffee Icon.svg" alt="Coffee Icon" id="header__button--icon"></button>
+    </a>
+  </nav>
+
+<!--
+  Wrapper Start
+-->
+
+  <div id="wrapper">
+    <div id="content">
+      <hero>
+          <div id="hero__left">
+            <h1 id="hero__left__heading">A guide for those without a perfect memory</h1>
+            <div id="hero__left__buttons">
+              <a  id="button--secondary" href="#section__whatiscss">
+                <button class="button button--secondary">learn css</button>
+              </a>
+
+              <a href="https://buymeacoffee.com/choice" target="_blank">
+                <button class="button button--primary" id="hero__left__button--right">buy me a coffee 
+                  <span id="hero__left__button--right__icon">
+                    (^-^)
+                  </span>
+              </button>
+              </a>
+
+            </div>
+          </div>
+          <div id="hero__right">
+            <div id="hero__right__circle"></div><img src="./images/HTML 3D.png" alt="HTML5 Logo" id="hero__right__image">
+          </div>
+      </hero>
+      <div>
+        <img src="./images/Arrow 1.svg" id="arrow--1" alt="Arrow Pointing Downwards">
+      </div>
+
+      <section id="section__whatiscss">
+        <div class="grey-700" id="section__whatiscss__left">
+          <div class="gradient-main" id="section__whatiscss__left__square"></div>
+        </div>
+        <div id="section__whatiscss__right">
+          <h3 id="section__whatiscss__right__h3">What is CSS FlexBox?</h3>
+          <a href="#section__explanation">
+            <button class="button--secondary button">
+              FlexBox Properties
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section id="section__explanation">
+        <div id="div__arrow--2">
+          <img src="./images/Arrow 2.svg" id="arrow--2" alt="Arrow Pointing Downwards">
+        </div>
+        <h2 id="section__explanation__h2">FlexBox Properties</h2>
+        <div id="section__explanation__body__div">
+          <p class="section__explanation__body">FlexBox can be sorted into two categories - <a class="text--link--gradient" href="#section__guide--container-properties">container</a> properties, and the <a class="text--link--gradient" href="#section__guide--item-properties">item</a> properties. Here’s a full list of the most commonly used properties in CSS.</p>
+        </div>
+      </section>
+
+<!--
+Container Properties
+-->
+
+        <div class="section__guide__header" id="section__guide--container-properties">
+          <div><h3>Container Properties</h3></div>
+          <img src="./images/square 1.svg" alt="Square Icon" class="section__guide__square-icon">
+          <img src="./images/Arrow 3.svg" alt="Arrow Pointing Downwards" class="arrow--3">
+        </div>
+
+        <div>
+          <section class="guide">
+            <div class="guide__text-box">
+              <h4 class="guide__h4">flex-direction:
+                <div class="guide__text-box__rotating-text__div">
+                  <span class="rotating-text">column</span>
+                  <span class="rotating-text">column-reverse</span>
+                  <span class="rotating-text">row</span>
+                  <span class="rotating-text">row-reverse</span>
+                </div>
+                ;
+              </h4>
+              <p class="guide__description">
+                The ‘flex-direction’ property determines the main-axis and cross-axis of a container. The main & cross axis is essentially the direction in which content is displayed. This can switch between ‘row’ and ‘column’.
+            </p>
+            </div>
+            <div class="guide__div grey-700" id="guide__div--flex-direction">
+              <div class="box gradient-1"><h4>1</h4></div>
+              <div class="box gradient-2"><h4>2</h4></div>
+              <div class="box gradient-3"><h4>3</h4></div>
+            </div>
+        </div>
+        </section>
+  
+        <section class="guide">
+          <div class="guide__div--left">
+            <h4 class="guide__h4">justify-content:
+              <div class="guide__text-box__rotating-text__div">
+                <span class="rotating-text">flex-start</span>
+                <span class="rotating-text">center</span>
+                <span class="rotating-text">space-evenly</span>
+                <span class="rotating-text">space-between</span>
+              </div>
+              ;
+            </h4>
+            <p class="guide__description">
+              The ‘justify-content’ property determines the position of items in a container relative to the main axis. For example, if the ‘flex-direction’ was ‘row’, the ‘justify-content’ property would determine the horizontal position of items in a container.
+          </p>
+          </div>
+          <div class="guide__div grey-700" id="guide__div--justify-content">
+            <div class="box gradient-1"><h4>1</h4></div>
+            <div class="box gradient-2"><h4>2</h4></div>
+            <div class="box gradient-3"><h4>3</h4></div>
+          </div>
+      </section>
+
+        <section class="guide">
+          <div class="guide__div--left">
+            <h4 class="guide__h4">align-items:
+              <div class="guide__text-box__rotating-text__div">
+                <span class="rotating-text">flex-start</span>
+                <span class="rotating-text">center</span>
+                <span class="rotating-text">flex-end</span>
+                <span class="rotating-text">stretch</span>
+              </div>
+              ;
+            </h4>
+            <p class="guide__description">
+              Similarly, the ‘align-items’ property determines the position of items in a container relative to the cross-axis. For example, if the ‘flex-direction’ was ‘row’, the ‘align-content’ property would determine the vertical position of items in a container.
+          </p>
+          </div>
+          <div class="guide__div grey-700" id="guide__div--align-items">
+            <div class="box gradient-1"><h4>1</h4></div>
+            <div class="box gradient-2"><h4>2</h4></div>
+            <div class="box gradient-3"><h4>3</h4></div>
+          </div>
+      </div>
+      </section>
+       
+      <section class="guide">
+          <div class="guide__div--left">
+            <h4 class="guide__h4">flex-wrap:
+              <div class="guide__text-box__rotating-text__div">
+                <span class="rotating-text">nowrap</span>
+                <span class="rotating-text">wrap</span>
+                <span class="rotating-text">wrap-reverse</span>
+                <span class="rotating-text">nowrap</span>
+              </div>
+              ;
+            </h4>
+            <p class="guide__description">
+              The ‘flex-wrap’ property determines what will happen if the total width/height of items exceeds the width/height of the parent container. If, for example, ‘flex-wrap’ has a value of ‘wrap’, items will pass onto the next row, column if they run out of horizontal/vertical space.
+            </p>
+          </div>
+          <div class="guide__div grey-700" id="guide__div--flex-wrap">
+            <div class="box gradient-1"><h4>1</h4></div>
+            <div class="box gradient-2"><h4>2</h4></div>
+            <div class="box gradient-3"><h4>3</h4></div>
+            <div class="box gradient-4"><h4>4</h4></div>
+            <div class="box gradient-5"><h4>5</h4></div>
+          </div>
+          
+      </section>
+  
+      <section class="guide">
+          <div class="guide__div--left">
+            <h4 class="guide__h4">align-content:
+              <div class="guide__text-box__rotating-text__div">
+                <span class="rotating-text">center</span>
+                <span class="rotating-text">space-around</span>
+                <span class="rotating-text">space-between</span>
+                <span class="rotating-text">flex-end</span>
+              </div>
+              ;
+            </h4>
+            <p class="guide__description">
+              Similarly, the ‘align-items’ property determines the position of items in a container relative to the cross-axis. For example, if the ‘flex-direction’ was ‘row’, the ‘align-content’ property would determine the vertical position of items in a container.
+          </p>
+          </div>
+          <div class="guide__div grey-700" id="guide__div--align-content">
+            <div class="box gradient-1"><h4>1</h4></div>
+            <div class="box gradient-2"><h4>2</h4></div>
+            <div class="box gradient-3"><h4>3</h4></div>
+            <div class="box gradient-4"><h4>4</h4></div>
+            <div class="box gradient-5"><h4>5</h4></div>
+            <div class="box gradient-6"><h4>6</h4></div>
+          </div>
+    </section>
+
+<!--
+Item Properties
+-->
+
+    <section class="section__guide__header" id="section__guide--item-properties">
+      <div><h3>Item Properties</h3></div>
+      <img src="./images/square 2.svg" alt="Square Icon" class="section__guide__square-icon">
+      <img src="./images/Arrow 3.svg" alt="Arrow Pointing Downwards" class="arrow--3">
+    </section>
+
+    <div>
+      <section class="guide">
+        <div class="guide__div--left item__h4 item__h4__before--box2">
+          <h4 class="guide__h4">order:
+            <div class="guide__text-box__rotating-text__div">
+              <span class="rotating-text">0</span>
+              <span class="rotating-text">5</span>
+              <span class="rotating-text">-20</span>
+              <span class="rotating-text">500</span>
+            </div>
+            ;
+          </h4>
+          <p class="guide__description">
+            Order is pretty self-explanatory. The order of an item determines its position relative to all the other items. The order of items is simply determined by their values; the highest order value will come last in a layout. Order values can also be negative (e.g. -100). 
+        </p>
+        </div>
+        <div class="guide__div grey-700" id="guide__div--order">
+          <div class="box gradient-1"><h4>1</h4></div>
+          <div class="box gradient-2"><h4>2</h4></div>
+          <div class="box gradient-3"><h4>3</h4></div>
+          <div class="box gradient-4"><h4>4</h4></div>
+        </div>
+    </div>
+    </section>
+    
+
+
+    <section class="guide">
+      <div class="guide__div--left item__h4 item__h4__before--box2">
+        <h4 class="guide__h4">flex-grow:
+          <div class="guide__text-box__rotating-text__div">
+            <span class="rotating-text">1</span>
+            <span class="rotating-text">0.5</span>
+            <span class="rotating-text">2</span>
+            <span class="rotating-text">10</span>
+          </div>
+          ;
+        </h4>
+        <p class="guide__description">
+          If flex-grow is enabled, it will attempt to fill the container with items on the main-axis. The value associated with the flex-grow property will determine how much an item will stretch relative to how much other items stretch. 
+      </p>
+      </div>
+      <div class="guide__div grey-700" id="guide__div--flex-grow">
+        <div class="box gradient-1 nogrow"><h4>1</h4></div>
+        <div class="box gradient-2 grow"><h4>2</h4></div>
+        <div class="box gradient-3 nogrow"><h4>3</h4></div>
+      </div>
+  </section>
+
+    <section class="guide">
+      <div class="guide__div--left item__h4 item__h4__before--box2and4">
+        <h4 class="guide__h4">flex-shrink:
+          <div class="guide__text-box__rotating-text__div">
+            <span class="rotating-text">1</span>
+            <span class="rotating-text">0.5</span>
+            <span class="rotating-text">2</span>
+            <span class="rotating-text">10</span>
+          </div>
+          ;
+        </h4>
+        <p class="guide__description">
+          If flex-shrink is enabled, it will attempt to shrink item in the container when the total length of the items on the main-axis exceeds the length of the main axis of the container. In other words, this determines if and to what extent items will shrink to fit within a container. 
+      </p>
+      </div>
+      <div class="guide__div grey-700" id="guide__div--flex-shrink">
+        <div class="box gradient-1"><h4>1</h4></div>
+        <div class="box gradient-2 shrink"><h4>2</h4></div>
+        <div class="box gradient-3"><h4>3</h4></div>
+        <div class="box gradient-4 shrink"><h4>4</h4></div>
+        <div class="box gradient-5"><h4>5</h4></div>
+      </div>
+    </section>
+   
+  <section class="guide">
+      <div class="guide__div--left item__h4 item__h4__before--box2">
+        <h4 class="guide__h4">align-self:
+          <div class="guide__text-box__rotating-text__div">
+            <span class="rotating-text">flex-start</span>
+            <span class="rotating-text">center</span>
+            <span class="rotating-text">flex-end</span>
+            <span class="rotating-text">center</span>
+          </div>
+          ;
+        </h4>
+        <p class="guide__description">
+          Align-self allows you to position individual items along the cross-axis independently from the value of the ‘align-items’ property of the parent container. The values are identical to those of ‘align-items’.
+        </p>
+      </div>
+      <div class="guide__div grey-700" id="guide__div--align-self">
+        <div class="box gradient-1"><h4>1</h4></div>
+        <div class="box gradient-2 align-self"><h4>2</h4></div>
+        <div class="box gradient-3"><h4>3</h4></div>
+        <div class="box gradient-4"><h4>4</h4></div>
+      </div>
+      
+  </section>
+
+  <section class="guide">
+      <div class="guide__div--left item__h4 item__h4__before--box">
+        <h4 class="guide__h4">flex-basis:
+          <div class="guide__text-box__rotating-text__div">
+            <span class="rotating-text">100px</span>
+            <span class="rotating-text">auto</span>
+            <span class="rotating-text">300px</span>
+            <span class="rotating-text">content</span>
+          </div>
+          ;
+        </h4>
+        <p class="guide__description">
+          Flex-basis determines the length along the main-axis of an item. This’ll overwrite the width/height of an item, however it won’t apply if there is a min/max property that conflicts with its value. 
+      </p>
+      </div>
+      <div class="guide__div grey-700 flex-basis" id="guide__div--flex-basis">
+        <div class="box gradient-1 flex-basis"><h4>1</h4></div>
+        <div class="box gradient-2 flex-basis"><h4>2</h4></div>
+        <div class="box gradient-3 flex-basis"><h4>3</h4></div>
+      </div>
+    </section>
+
+    <section id="section__closing-message">
+      <h2>You're Becoming a Pro!</h2>
+      <div id="section__closing-message__div">
+        <p class="body" id="section__closing-message__body">
+          CSS supports many more properties and values, but I rarely use the more complex CSS in my day-to-day coding. It took me a little while to construct, and I'm happy to offer it for free, but please <a href="https://buymeacoffee.com/choice" target="_blank" class="text--link--gradient">buy me a coffee!</a>
+        </p>
+      </div>
+      <a href="https://behance.net/choicedigitalstudio" target="_blank" class="text--link--gradient body">— Jacob ❤</a>
+    </section>
+    <!--
+  Wrapper End
+-->
+  </div>
+
+  <section id="otherdevice">
+    <h3>Oops! This site is meant to be viewed on a desktop display.</h3>
+  </section>
+  <footer>
+    <p>©2022</p>
+    <p>Made with love by Jacob @ <a href="https://choicewebsite.design" target="_blank" class="text--link--gradient">Choice Studio</a></p>
+  </footer>
+</body>
