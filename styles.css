@@ -100,8 +100,8 @@ nav #header__button:hover {
   margin-top: -3px;
   opacity: 75%;
   background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;   -moz-text-fill-color: transparent;
 }
 .button--primary #header__button--icon {
   margin-left: 20px;
@@ -120,8 +120,8 @@ nav #header__button:hover {
 .button--secondary:hover {
   padding: 13px 32px;
   background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;   -moz-text-fill-color: transparent;
   margin-bottom: -3px;
 }
 
