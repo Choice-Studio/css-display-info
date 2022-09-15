@@ -496,16 +496,12 @@ hero #hero__right #hero__right__circle {
 }
 
 .rotating-text {
-  background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  /* background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%); */
 
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -ms-background-clip: text;
-  -o-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -ms-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
+  -webkit-text-fill-color: #FF3B00;
+  -moz-text-fill-color: #FF3B00;
+  -ms-text-fill-color: #FF3B00;
+  -o-text-fill-color: #FF3B00;
   margin-left: 20px;
   display:flex;
   flex-direction: column;
