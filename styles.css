@@ -2,28 +2,49 @@
 
 @font-face {
     font-family: 'clementepdah';
-    src: url('https://cssdisplay.info/wp-content/themes/css%20display/fonts/clementepdah-bookitalic-webfont.woff2') format('woff2'),
-         url('https://cssdisplay.info/wp-content/themes/css%20display/fonts/clementepdah-bookitalic-webfont.woff') format('woff');
+    src: url('./fonts/clementepdah-bookitalic-webfont.woff2') format('woff2'),
+         url('./fonts/clementepdah-bookitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
   font-family: 'gogh';
-  src: url('https://cssdisplay.info/wp-content/themes/css%20display/fonts/gogh-extrabold-webfont.woff2') format('woff2'),
-       url('https://cssdisplay.info/wp-content/themes/css%20display/fonts/gogh-extrabold-webfont.woff') format('woff');
+  src: url('./fonts/gogh-extrabold-webfont.woff2') format('woff2'),
+       url('./fonts/gogh-extrabold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'futurahandwritten';
-  src: url('https://cssdisplay.info/wp-content/themes/css%20display/futurahandwritten-webfont.woff2') format('woff2'),
-       url('https://cssdisplay.info/wp-content/themes/css%20display/futurahandwritten-webfont.woff') format('woff');
+  src: url('./fonts/clementepdah-bookitalic-webfont.woff2') format('woff2'),
+       url('./fonts/clementepdah-bookitalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
+
+
+/* catamaran-regular - latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/catamaran-v17-latin-regular.woff2') format('woff2'),
+       url('./fonts/catamaran-v17-latin-regular.woff') format('woff');
+}
+
+/* catamaran-700 - latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./fonts/catamaran-v17-latin-700.woff2') format('woff2'),
+       url('./fonts/catamaran-v17-latin-700.woff') format('woff');
+       
+}
+
 
 
 * {
@@ -100,6 +121,7 @@ nav #header__button:hover {
   margin-top: -3px;
   opacity: 75%;
   background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  background: -moz-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
   -webkit-background-clip: text; -moz-background-clip: text;
   -webkit-text-fill-color: transparent;   -moz-text-fill-color: transparent;
 }
@@ -175,8 +197,9 @@ h5 {
   -moz-text-fill-color: transparent;
   -ms-text-fill-color: transparent;
   -o-text-fill-color: transparent;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
+  text-decoration:none;
 }
 
 .grey-100 {
