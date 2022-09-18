@@ -1,69 +1,70 @@
-
-
 @font-face {
-    font-family: 'clementepdah';
-    src: url('./fonts/clementepdah-bookitalic-webfont.woff2') format('woff2'),
-         url('./fonts/clementepdah-bookitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "clementepdah";
+  src: url("./fonts/clementepdah-bookitalic-webfont.woff2") format("woff2"),
+    url("./fonts/clementepdah-bookitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'gogh';
-  src: url('./fonts/gogh-extrabold-webfont.woff2') format('woff2'),
-       url('./fonts/gogh-extrabold-webfont.woff') format('woff');
+  font-family: "gogh";
+  src: url("./fonts/gogh-extrabold-webfont.woff2") format("woff2"),
+    url("./fonts/gogh-extrabold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'futurahandwritten';
-  src: url('./fonts/clementepdah-bookitalic-webfont.woff2') format('woff2'),
-       url('./fonts/clementepdah-bookitalic-webfont.woff') format('woff');
+  font-family: "futurahandwritten";
+  src: url("./fonts/clementepdah-bookitalic-webfont.woff2") format("woff2"),
+    url("./fonts/clementepdah-bookitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
-
 
 /* catamaran-regular - latin */
 @font-face {
-  font-family: 'Catamaran';
+  font-family: "Catamaran";
   font-style: normal;
   font-weight: normal;
-  src: url('./fonts/catamaran-v17-latin-regular.woff2') format('woff2'),
-       url('./fonts/catamaran-v17-latin-regular.woff') format('woff');
+  src: url("./fonts/catamaran-v17-latin-regular.woff2") format("woff2"),
+    url("./fonts/catamaran-v17-latin-regular.woff") format("woff");
 }
 
 /* catamaran-700 - latin */
 @font-face {
-  font-family: 'Catamaran';
+  font-family: "Catamaran";
   font-style: normal;
   font-weight: bold;
-  src: url('./fonts/catamaran-v17-latin-700.woff2') format('woff2'),
-       url('./fonts/catamaran-v17-latin-700.woff') format('woff');
-       
+  src: url("./fonts/catamaran-v17-latin-700.woff2") format("woff2"),
+    url("./fonts/catamaran-v17-latin-700.woff") format("woff");
 }
-
-
 
 * {
   margin: 0;
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar, ::-moz-scrollbar, ::-ms-scrollbar, ::-o-scrollbar{
+::-webkit-scrollbar,
+::-moz-scrollbar,
+::-ms-scrollbar,
+::-o-scrollbar {
   width: 18px;
   background-color: #1d1d1d;
 }
 
-::-webkit-scrollbar-thumb, ::-moz-scrollbar-thumb, ::-ms-scrollbar-thumb, ::-o-scrollbar-thumb {
+::-webkit-scrollbar-thumb,
+::-moz-scrollbar-thumb,
+::-ms-scrollbar-thumb,
+::-o-scrollbar-thumb {
   width: 16px;
-  background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  background: linear-gradient(203.89deg, #ff0000 15.35%, #ff9900 99.34%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-::-webkit-scrollbar-thumb:hover, ::-moz-scrollbar-thumb:hover, ::-ms-scrollbar-thumb:hover, ::-o-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover,
+::-moz-scrollbar-thumb:hover,
+::-ms-scrollbar-thumb:hover,
+::-o-scrollbar-thumb:hover {
   border-radius: 50px;
 }
 
@@ -120,10 +121,16 @@ nav #header__button:hover {
   margin-bottom: -3px;
   margin-top: -3px;
   opacity: 75%;
-  background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
-  background: -moz-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
-  -webkit-background-clip: text; -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;   -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(
+    203.89deg,
+    #ff0000 15.35%,
+    #ff9900 99.34%
+  );
+  background: -moz-linear-gradient(203.89deg, #ff0000 15.35%, #ff9900 99.34%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .button--primary #header__button--icon {
   margin-left: 20px;
@@ -141,9 +148,15 @@ nav #header__button:hover {
 }
 .button--secondary:hover {
   padding: 13px 32px;
-  background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
-  -webkit-background-clip: text; -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;   -moz-text-fill-color: transparent;
+  background: -webkit-linear-gradient(
+    203.89deg,
+    #ff0000 15.35%,
+    #ff9900 99.34%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   margin-bottom: -3px;
 }
 
@@ -188,7 +201,11 @@ h5 {
 }
 
 .text--link--gradient {
-  background: -webkit-linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  background: -webkit-linear-gradient(
+    203.89deg,
+    #ff0000 15.35%,
+    #ff9900 99.34%
+  );
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -ms-background-clip: text;
@@ -199,19 +216,19 @@ h5 {
   -o-text-fill-color: transparent;
   font-weight: 700;
   cursor: pointer;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .grey-100 {
-  color: #F8F8F8;
+  color: #f8f8f8;
 }
 
 .grey-200 {
-  color: #E1E3E2;
+  color: #e1e3e2;
 }
 
 .grey-300 {
-  color: #C9CCCA;
+  color: #c9ccca;
 }
 
 .grey-700 {
@@ -219,35 +236,35 @@ h5 {
 }
 
 .gradient-main {
-  background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  background: linear-gradient(203.89deg, #ff0000 15.35%, #ff9900 99.34%);
 }
 
 .gradient-1 {
-  background: linear-gradient(109.47deg, #0A76B4 21.8%, #21D4DF 77.98%);
+  background: linear-gradient(109.47deg, #0a76b4 21.8%, #21d4df 77.98%);
 }
 
 .gradient-2 {
-  background: linear-gradient(102.35deg, #5BD33D -2.55%, #19AE8B 84.24%);
+  background: linear-gradient(102.35deg, #5bd33d -2.55%, #19ae8b 84.24%);
 }
 
 .gradient-3 {
-  background: linear-gradient(284.37deg, #EEBE13 -60.75%, #13EE36 160.05%);
+  background: linear-gradient(284.37deg, #eebe13 -60.75%, #13ee36 160.05%);
 }
 
 .gradient-4 {
-  background: linear-gradient(219.41deg, #FF6B00 14.77%, #FFC700 77.45%);
+  background: linear-gradient(219.41deg, #ff6b00 14.77%, #ffc700 77.45%);
 }
 
 .gradient-5 {
-  background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%);
+  background: linear-gradient(203.89deg, #ff0000 15.35%, #ff9900 99.34%);
 }
 
 .gradient-6 {
-  background: linear-gradient(215.06deg, #BF103A 20.62%, #FF687A 92.28%);
+  background: linear-gradient(215.06deg, #bf103a 20.62%, #ff687a 92.28%);
 }
 
 .gradient-grey {
-  background: linear-gradient(111.27deg, #8D8D8D 13.85%, #4A4A4A 101.24%);
+  background: linear-gradient(111.27deg, #8d8d8d 13.85%, #4a4a4a 101.24%);
 }
 
 #arrow--1 {
@@ -286,7 +303,7 @@ hero #hero__left #hero__left__heading::before {
   display: block;
   border-left: #ff4800 2px solid;
   padding-left: 10px;
-  color: #C9CCCA;
+  color: #c9ccca;
 }
 hero #hero__left #hero__left__heading::after {
   content: "Spending hours upon hours trying to figure out why your nav isn’t aligning horizontally? Or just keep forgetting how to justify your CSS elements? I’ve made a little guide for all those coders who’ve had enough.";
@@ -298,7 +315,7 @@ hero #hero__left #hero__left__heading::after {
   display: block;
   border-left: #ff4800 2px solid;
   padding-left: 16px;
-  color: #C9CCCA;
+  color: #c9ccca;
   width: 631px;
   margin-top: 36px;
   margin-bottom: 60px;
@@ -329,13 +346,12 @@ hero #hero__right #hero__right__circle {
   background: rgb(255, 60, 0);
   opacity: 0.7;
   filter: blur(100px);
-  border-radius:50%;
-  opacity:.4;
-  right:-80px;
-  top:-50px;
+  border-radius: 50%;
+  opacity: 0.4;
+  right: -80px;
+  top: -50px;
   z-index: -1;
   position: absolute;
-
 }
 
 #section__whatiscss {
@@ -352,7 +368,9 @@ hero #hero__right #hero__right__circle {
   justify-content: center;
   align-items: center;
 }
-#section__whatiscss #section__whatiscss__left #section__whatiscss__left__square {
+#section__whatiscss
+  #section__whatiscss__left
+  #section__whatiscss__left__square {
   position: absolute;
   width: 260px;
   height: 260px;
@@ -363,7 +381,9 @@ hero #hero__right #hero__right__circle {
   flex-grow: 0;
   margin-top: 70px;
 }
-#section__whatiscss #section__whatiscss__right #section__whatiscss__right__h3::after {
+#section__whatiscss
+  #section__whatiscss__right
+  #section__whatiscss__right__h3::after {
   content: "CSS Flexbox is a system of structuring containers, and items within those containers, when being displayed on a website. Flexbox is used whenever coders are creating custom layouts, most commonly in navigation bars and headers, as they’re almost always displayed horizontally.";
   font-family: "Catamaran";
   display: block;
@@ -435,7 +455,7 @@ hero #hero__right #hero__right__circle {
   font-size: 20px;
   line-height: 140%;
   display: block;
-  color: #E1E3E2;
+  color: #e1e3e2;
   margin-top: 40px;
 }
 
@@ -447,7 +467,7 @@ hero #hero__right #hero__right__circle {
   font-size: 20px;
   line-height: 140%;
   display: block;
-  color: #E1E3E2;
+  color: #e1e3e2;
   margin-top: 28px;
 }
 
@@ -458,7 +478,7 @@ hero #hero__right #hero__right__circle {
   font-weight: 800;
   font-size: 18px;
   line-height: 109.02%;
-  color: #C9CCCA;
+  color: #c9ccca;
 }
 
 .item__h4__before--box::before {
@@ -498,31 +518,33 @@ hero #hero__right #hero__right__circle {
 .rotating-text {
   /* background: linear-gradient(203.89deg, #FF0000 15.35%, #FF9900 99.34%); */
 
-  -webkit-text-fill-color: #FF3B00;
-  -moz-text-fill-color: #FF3B00;
-  -ms-text-fill-color: #FF3B00;
-  -o-text-fill-color: #FF3B00;
+  -webkit-text-fill-color: #ff3b00;
+  -moz-text-fill-color: #ff3b00;
+  -ms-text-fill-color: #ff3b00;
+  -o-text-fill-color: #ff3b00;
   margin-left: 20px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   position: relative;
   animation: rotating-text 10s ease-in-out infinite;
   margin-bottom: 10px;
 }
 
-
-
 @keyframes rotating-text {
-  0%, 20% {
+  0%,
+  20% {
     transform: translateY(0);
   }
-  25%, 45% {
+  25%,
+  45% {
     transform: translateY(-51.75px);
   }
-  50%, 70% {
+  50%,
+  70% {
     transform: translateY(-103.5px);
   }
-  75%, 95% {
+  75%,
+  95% {
     transform: translateY(-155.25px);
   }
   100% {
@@ -535,16 +557,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_flex-direction {
-  0%, 20% {
+  0%,
+  20% {
     flex-direction: column;
   }
-  25%, 45% {
+  25%,
+  45% {
     flex-direction: column-reverse;
   }
-  50%, 70% {
+  50%,
+  70% {
     flex-direction: row;
   }
-  75%, 95% {
+  75%,
+  95% {
     flex-direction: row-reverse;
   }
   100% {
@@ -553,16 +579,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_flex-direction {
-  0%, 20% {
+  0%,
+  20% {
     flex-direction: column;
   }
-  25%, 45% {
+  25%,
+  45% {
     flex-direction: column-reverse;
   }
-  50%, 70% {
+  50%,
+  70% {
     flex-direction: row;
   }
-  75%, 95% {
+  75%,
+  95% {
     flex-direction: row-reverse;
   }
   100% {
@@ -575,16 +605,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_justify-content {
-  0%, 20% {
+  0%,
+  20% {
     justify-content: flex-start;
   }
-  25%, 45% {
+  25%,
+  45% {
     justify-content: center;
   }
-  50%, 70% {
+  50%,
+  70% {
     justify-content: space-evenly;
   }
-  75%, 95% {
+  75%,
+  95% {
     justify-content: space-between;
   }
   100% {
@@ -593,16 +627,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_justify-content {
-  0%, 20% {
+  0%,
+  20% {
     justify-content: flex-start;
   }
-  25%, 45% {
+  25%,
+  45% {
     justify-content: center;
   }
-  50%, 70% {
+  50%,
+  70% {
     justify-content: space-evenly;
   }
-  75%, 95% {
+  75%,
+  95% {
     justify-content: space-between;
   }
   100% {
@@ -615,16 +653,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_align-items {
-  0%, 20% {
+  0%,
+  20% {
     align-items: flex-start;
   }
-  25%, 45% {
+  25%,
+  45% {
     align-items: center;
   }
-  50%, 70% {
+  50%,
+  70% {
     align-items: flex-end;
   }
-  75%, 95% {
+  75%,
+  95% {
     align-items: stretch;
   }
   100% {
@@ -633,16 +675,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_align-items {
-  0%, 20% {
+  0%,
+  20% {
     align-items: flex-start;
   }
-  25%, 45% {
+  25%,
+  45% {
     align-items: center;
   }
-  50%, 70% {
+  50%,
+  70% {
     align-items: flex-end;
   }
-  75%, 95% {
+  75%,
+  95% {
     align-items: stretch;
   }
   100% {
@@ -654,16 +700,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_flex-wrap {
-  0%, 20% {
+  0%,
+  20% {
     flex-wrap: nowrap;
   }
-  25%, 45% {
+  25%,
+  45% {
     flex-wrap: wrap;
   }
-  50%, 70% {
+  50%,
+  70% {
     flex-wrap: wrap-reverse;
   }
-  75%, 95% {
+  75%,
+  95% {
     flex-wrap: nowrap;
   }
   100% {
@@ -672,16 +722,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_flex-wrap {
-  0%, 20% {
+  0%,
+  20% {
     flex-wrap: nowrap;
   }
-  25%, 45% {
+  25%,
+  45% {
     flex-wrap: wrap;
   }
-  50%, 70% {
+  50%,
+  70% {
     flex-wrap: wrap-reverse;
   }
-  75%, 95% {
+  75%,
+  95% {
     flex-wrap: nowrap;
   }
   100% {
@@ -695,16 +749,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_align-content {
-  0%, 20% {
+  0%,
+  20% {
     align-content: center;
   }
-  25%, 45% {
+  25%,
+  45% {
     align-content: space-around;
   }
-  50%, 70% {
+  50%,
+  70% {
     align-content: space-between;
   }
-  75%, 95% {
+  75%,
+  95% {
     align-content: flex-end;
   }
   100% {
@@ -713,16 +771,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_align-content {
-  0%, 20% {
+  0%,
+  20% {
     align-content: center;
   }
-  25%, 45% {
+  25%,
+  45% {
     align-content: space-around;
   }
-  50%, 70% {
+  50%,
+  70% {
     align-content: space-between;
   }
-  75%, 95% {
+  75%,
+  95% {
     align-content: flex-end;
   }
   100% {
@@ -735,16 +797,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_order {
-  0%, 20% {
+  0%,
+  20% {
     order: 0;
   }
-  25%, 45% {
+  25%,
+  45% {
     order: 5;
   }
-  50%, 70% {
+  50%,
+  70% {
     order: -20;
   }
-  75%, 95% {
+  75%,
+  95% {
     order: 500;
   }
   100% {
@@ -753,16 +819,20 @@ hero #hero__right #hero__right__circle {
 }
 
 @keyframes animation_order {
-  0%, 20% {
+  0%,
+  20% {
     order: 0;
   }
-  25%, 45% {
+  25%,
+  45% {
     order: 5;
   }
-  50%, 70% {
+  50%,
+  70% {
     order: -20;
   }
-  75%, 95% {
+  75%,
+  95% {
     order: 500;
   }
   100% {
@@ -781,18 +851,21 @@ hero #hero__right #hero__right__circle {
   align-items: center;
 }
 
-
 @keyframes animation_flex-grow {
-  0%, 20% {
+  0%,
+  20% {
     flex-grow: 1;
   }
-  25%, 45% {
+  25%,
+  45% {
     flex-grow: 0.5;
   }
-  50%, 70% {
+  50%,
+  70% {
     flex-grow: 2;
   }
-  75%, 95% {
+  75%,
+  95% {
     flex-grow: 10;
   }
   100% {
@@ -800,26 +873,28 @@ hero #hero__right #hero__right__circle {
   }
 }
 #guide__div--flex-shrink .shrink {
-
-          animation: animation_flex-shrink 10s infinite;
+  animation: animation_flex-shrink 10s infinite;
 }
 
 #guide__div--flex-shrink {
   align-items: center;
 }
 
-
 @keyframes animation_flex-shrink {
-  0%, 20% {
+  0%,
+  20% {
     flex-shrink: 1;
   }
-  25%, 45% {
+  25%,
+  45% {
     flex-shrink: 0.5;
   }
-  50%, 70% {
+  50%,
+  70% {
     flex-shrink: 2;
   }
-  75%, 95% {
+  75%,
+  95% {
     flex-shrink: 10;
   }
   100% {
@@ -827,27 +902,28 @@ hero #hero__right #hero__right__circle {
   }
 }
 #guide__div--align-self .align-self {
-
-          animation: animation_align-self 10s infinite;
+  animation: animation_align-self 10s infinite;
 }
 
 #guide__div--align-self {
   align-items: center;
 }
 
-
-
 @keyframes animation_align-self {
-  0%, 20% {
+  0%,
+  20% {
     align-self: flex-start;
   }
-  25%, 45% {
+  25%,
+  45% {
     align-self: center;
   }
-  50%, 70% {
+  50%,
+  70% {
     align-self: flex-end;
   }
-  75%, 95% {
+  75%,
+  95% {
     align-self: center;
   }
   100% {
@@ -855,8 +931,7 @@ hero #hero__right #hero__right__circle {
   }
 }
 .flex-basis {
-
-          animation: animation_flex-basis 10s infinite;
+  animation: animation_flex-basis 10s infinite;
 }
 
 #guide__div--flex-basis {
@@ -865,19 +940,21 @@ hero #hero__right #hero__right__circle {
   min-width: 550px;
 }
 
-
-
 @keyframes animation_flex-basis {
-  0%, 20% {
+  0%,
+  20% {
     flex-basis: 100px;
   }
-  25%, 45% {
+  25%,
+  45% {
     flex-basis: auto;
   }
-  50%, 70% {
+  50%,
+  70% {
     flex-basis: 300px;
   }
-  75%, 95% {
+  75%,
+  95% {
     flex-basis: content;
   }
   100% {
@@ -941,4 +1018,4 @@ footer {
   footer {
     justify-self: flex-end;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
