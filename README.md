@@ -8,4 +8,4 @@ I used Figma for the UI/UX design, and HTML and CSS for the code. I hope to crea
 
 In the meantime feel free to look at the website!
 
-#[cssdisplay.info](https://cssdisplay.info)
+[cssdisplay.info](https://cssdisplay.info)
