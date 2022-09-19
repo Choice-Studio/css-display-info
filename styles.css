@@ -1,3 +1,5 @@
+/* Styles */
+
 @font-face {
   font-family: "clementepdah";
   src: url("./fonts/clementepdah-bookitalic-webfont.woff2") format("woff2"),
@@ -354,13 +356,13 @@ hero #hero__right #hero__right__circle {
   position: absolute;
 }
 
-#section__whatiscss {
+#learncss {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-top: -24px;
 }
-#section__whatiscss #section__whatiscss__left {
+#learncss #section__whatiscss__left {
   width: 600px;
   height: 414px;
   border-radius: 12px;
@@ -368,7 +370,7 @@ hero #hero__right #hero__right__circle {
   justify-content: center;
   align-items: center;
 }
-#section__whatiscss
+#learncss
   #section__whatiscss__left
   #section__whatiscss__left__square {
   position: absolute;
@@ -376,12 +378,12 @@ hero #hero__right #hero__right__circle {
   height: 260px;
   border-radius: 12px;
 }
-#section__whatiscss #section__whatiscss__right {
+#learncss #section__whatiscss__right {
   text-align: right;
   flex-grow: 0;
   margin-top: 70px;
 }
-#section__whatiscss
+#learncss
   #section__whatiscss__right
   #section__whatiscss__right__h3::after {
   content: "CSS Flexbox is a system of structuring containers, and items within those containers, when being displayed on a website. Flexbox is used whenever coders are creating custom layouts, most commonly in navigation bars and headers, as they’re almost always displayed horizontally.";
