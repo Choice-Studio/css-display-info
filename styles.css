@@ -147,6 +147,7 @@ nav #header__button:hover {
   color: white;
   border-color: white;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 .button--secondary:hover {
   padding: 13px 32px;
