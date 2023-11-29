@@ -1,5 +1,7 @@
 /* Styles */
 
+/* TODO: Remove text decoratiomn from top button */
+
 @font-face {
   font-family: "clementepdah";
   src: url("./fonts/clementepdah-bookitalic-webfont.woff2") format("woff2"),
@@ -147,7 +149,6 @@ nav #header__button:hover {
   color: white;
   border-color: white;
   transition: all 0.3s ease;
-  text-decoration: none;
 }
 .button--secondary:hover {
   padding: 13px 32px;
