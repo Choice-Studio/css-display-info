@@ -92,6 +92,11 @@ nav {
   margin: 14px 0;
   padding: 0 14px;
 }
+
+#hero__left a {
+  text-decoration: none;
+}
+
 nav #header__logo {
   height: 36px;
   width: 142px;
@@ -331,6 +336,7 @@ hero #hero__left #hero__left__button--right__icon {
   font-family: "FuturaHandwritten";
   margin-left: 10px;
 }
+
 hero #hero__right {
   width: 676px;
   top: 100px;
